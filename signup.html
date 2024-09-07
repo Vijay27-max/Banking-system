@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(224, 224, 224);
+        }
+        #signup {
+            background-color: white;
+            width: 50%;
+            height: 1200px;
+            margin-left: 400px;
+        }
+
+        .register {
+            margin-left: 300px;
+        }
+
+        #form {
+            margin-left: 10px;
+            /* margin-top: 10px; */
+        }
+
+        #form input {
+            margin-top: 10px;
+            /* border-radius: 5px; */
+            font-weight: 200;
+            justify-content: center;
+            align-items: center;
+            padding-left: 200px;
+        }
+
+        input[type='date'] {
+            padding-right: 50px;
+            margin-right: 10px;
+            height: 35px;
+            width: 98%;
+            border-radius: 5px;
+        }
+
+        input[type='text'] {
+            /* padding-right: 50px;
+            margin-right: 10px; */
+            height: 35px;
+            width: 98%;
+            border-radius: 5px;
+        }
+
+        input[type='password'] {
+            padding-right: 50px;
+            /* margin-right: 10px; */
+            height: 35px;
+            width: 98%;
+            border-radius: 5px;
+        }
+
+        input[type='email'] {
+            /* padding-right: 50px;
+            margin-right: 10px; */
+            height: 35px;
+            width: 98%;
+            border-radius: 5px;
+        }
+
+        input[type='number'] {
+            /* padding-right: 50px;
+            margin-right: 10px; */
+            height: 35px;
+            width: 98%;
+            border-radius: 5px;
+        }
+
+        input[type='submit'] {
+            /* padding-right: 50px;
+            margin-right: 10px; */
+            height: 35px;
+            width: 98%;
+            padding-right: 200px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        input[type='reset'] {
+            /* padding-right: 50px;
+            margin-right: 10px; */
+            height: 35px;
+            width: 98%;
+            padding-right: 200px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        input[type='file'] {
+            padding-right: 50px;
+            /* margin-right: 10px; */
+            height: 35px;
+            width: 98%;
+            border-radius: 5px;
+            border: 2px solid black;
+            padding-top: 4px;
+            background-color: white;
+        }
+
+        #nav-bar img {
+            height: 100px;
+            width: 100px;
+            margin-left: -250px;
+            border-radius: 20px;
+        }
+
+        #nav-bar p {
+            margin-left: -700px;
+            font-weight: 1000;
+            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+            font-family: 'Roboto Slab', serif;
+            font-size: large;
+        }
+
+        #nav-bar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #signup {
+            background-color: rgb(209, 203, 203);
+        }
+
+        #frontpage {
+            background-color: rgb(187, 210, 198);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="signup">
+        <div id="frontpage">
+            <nav id="nav-bar">
+                <img src="img/img logo bank.png" alt="error">
+                <p id="Name">CUROIUS BANK</p>
+            </nav>
+        </div>
+        <h2 class="register">Register:</h2>
+        <P>Personal Details:</P>
+        <br>
+        <div id="form">
+            <form action=" " method="post">
+                <div>
+                    <!-- <label for="name">Name:</label> -->
+                    <input type="text" name="myfirstname" id="first name" placeholder="First Name">
+                    <input type="text" name="mylastname" id="last name" placeholder="last Name">
+                </div>
+                <br>
+                <div>
+                    <input type="text" name="fatherfullname" id="father's full name" placeholder="Father's Full name">
+                    <input type="text" name="motherfullname" id="mother'sfull name" placeholder="Mother's Full name">
+                </div>
+                <br>
+                <div>
+                    <input type="date" name="mydob" placeholder="Birth Date">
+                    <input type="number" name="mynumber" placeholder="Mobile Number">
+                </div>
+                <br>
+                <!-- <div>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="number" name="pincode" placeholder="Pincode">
+                </div> -->
+                <!-- are you eligible:<input type="checkbox" name="my eligiblility" checked> -->
+
+                <br>
+                <div>
+                    gender: male<input type="radio" name="mygender" value="m" placeholder="gende">
+                    female<input type="radio" name="mygender" value="w" placeholder="gender">
+                    other<input type="radio" name="mygender" value="o" placeholder="gender">
+                </div>
+                <br>
+                <div>
+                    <!-- <label for="name">Name:</label> -->
+                    <input type="text" name="mypan" id="my pan number" placeholder="Pan Number">
+                    <input type="text" name="myaadhar" id="adhar number" placeholder="Aadhar Number">
+
+                </div>
+                <div>
+                    <!-- <label for="name">Name:</label> -->
+                    <input type="file" name="uaadhar" id="aadharn" placeholder="adhar">
+                    <input type="file" name="upan" id="pann" placeholder="pan">
+
+                </div>
+                <div>
+                    <!-- <label for="name">Name:</label> -->
+                    <input type="text" name="username" id="user number" placeholder="create your userName">
+                    <input type="password" name="mypassword" id="my password" placeholder="create your password">
+
+                </div>
+                <br>
+                <div class="submit">
+                    <div>
+                        <input type="submit" value="submit now">
+                    </div>
+                    <div>
+                        <input type="reset" value="reset now">
+                    </div>
+                </div>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
